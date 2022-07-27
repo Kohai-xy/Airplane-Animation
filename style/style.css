@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+}
+
+.sky {
+  position: relative;
+  display: flex;
+}
+
+.airplane {
+  position: absolute;
+  width: 300px;
+  bottom: 0px;
+  left: 0;
+  animation: airplane 8s linear 2s 1 normal forwards;
+  -webkit-animation: airplane 8s linear 2s 1 normal forwards;
+}
+@keyframes airplane {
+  100% {
+    left: 1600px;
+    bottom: 400px;
+  }
+  65% {
+    bottom: 340px;
+  }
+  0% {
+    bottom: 0px;
+    left: 0;
+  }
+}
